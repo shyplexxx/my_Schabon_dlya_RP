@@ -1,5 +1,5 @@
 ﻿
-namespace RP11
+namespace RP12
 {
     partial class Form1
     {
@@ -66,8 +66,8 @@ namespace RP11
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RP11.Properties.Resources.сть;
-            this.pictureBox1.InitialImage = global::RP11.Properties.Resources._1684533494_polinka_top_p_lupa_kartinka_na_belom_fone_instagram_22;
+            this.pictureBox1.Image = global::RP12.Properties.Resources.сть;
+            this.pictureBox1.InitialImage = global::RP12.Properties.Resources._1684533494_polinka_top_p_lupa_kartinka_na_belom_fone_instagram_22;
             this.pictureBox1.Location = new System.Drawing.Point(139, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
@@ -122,7 +122,7 @@ namespace RP11
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RP11";
+            this.Text = "RP12";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

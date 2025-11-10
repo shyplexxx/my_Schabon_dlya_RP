@@ -1,5 +1,5 @@
 ﻿
-namespace RP11
+namespace RP12
 {
     partial class Form3
     {
@@ -97,7 +97,7 @@ namespace RP11
             this.MinimizeBox = false;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RP11";
+            this.Text = "RP12";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
