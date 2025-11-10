@@ -87,7 +87,7 @@ namespace RP11
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(45, 674);
@@ -101,7 +101,7 @@ namespace RP11
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox2.BackColor = System.Drawing.Color.Orange;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox2.Location = new System.Drawing.Point(48, 601);
@@ -115,7 +115,7 @@ namespace RP11
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox3.BackColor = System.Drawing.Color.Orange;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox3.Location = new System.Drawing.Point(208, 601);
@@ -129,7 +129,7 @@ namespace RP11
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox4.BackColor = System.Drawing.Color.Orange;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox4.Location = new System.Drawing.Point(416, 601);
@@ -143,7 +143,7 @@ namespace RP11
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox5.BackColor = System.Drawing.Color.Orange;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox5.Location = new System.Drawing.Point(618, 601);
@@ -158,43 +158,43 @@ namespace RP11
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox6.BackColor = System.Drawing.Color.Orange;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox6.Location = new System.Drawing.Point(819, 601);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.MaxLength = 10;
+            this.textBox6.MaxLength = 4;
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(157, 44);
+            this.textBox6.Size = new System.Drawing.Size(97, 44);
             this.textBox6.TabIndex = 8;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox7.BackColor = System.Drawing.Color.Orange;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox7.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox7.Location = new System.Drawing.Point(984, 601);
+            this.textBox7.Location = new System.Drawing.Point(924, 601);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox7.MaxLength = 2;
+            this.textBox7.MaxLength = 6;
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(52, 44);
+            this.textBox7.Size = new System.Drawing.Size(111, 44);
             this.textBox7.TabIndex = 9;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
-            this.textBox8.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox8.BackColor = System.Drawing.Color.Orange;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox8.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox8.Location = new System.Drawing.Point(1043, 601);
+            this.textBox8.Location = new System.Drawing.Point(1044, 601);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox8.MaxLength = 10;
+            this.textBox8.MaxLength = 15;
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(139, 44);
+            this.textBox8.Size = new System.Drawing.Size(201, 44);
             this.textBox8.TabIndex = 10;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
@@ -247,22 +247,22 @@ namespace RP11
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(815, 574);
+            this.label7.Location = new System.Drawing.Point(818, 553);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 22);
+            this.label7.Size = new System.Drawing.Size(87, 44);
             this.label7.TabIndex = 16;
-            this.label7.Text = "Адрес";
+            this.label7.Text = "Серия\r\nпаспорта";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(980, 574);
+            this.label8.Location = new System.Drawing.Point(920, 552);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 22);
+            this.label8.Size = new System.Drawing.Size(87, 44);
             this.label8.TabIndex = 17;
-            this.label8.Text = "Стаж";
+            this.label8.Text = "Номер \r\nпаспорта";
             // 
             // label9
             // 
@@ -271,21 +271,21 @@ namespace RP11
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(1040, 574);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 22);
+            this.label9.Size = new System.Drawing.Size(62, 22);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Должность";
+            this.label9.Text = "Адрес";
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox9.BackColor = System.Drawing.Color.Orange;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox9.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox9.Location = new System.Drawing.Point(1189, 601);
+            this.textBox9.Location = new System.Drawing.Point(1251, 601);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox9.MaxLength = 10;
+            this.textBox9.MaxLength = 3;
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(139, 44);
+            this.textBox9.Size = new System.Drawing.Size(77, 44);
             this.textBox9.TabIndex = 19;
             this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
@@ -294,34 +294,34 @@ namespace RP11
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(1186, 574);
+            this.label10.Location = new System.Drawing.Point(1247, 553);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 22);
+            this.label10.Size = new System.Drawing.Size(86, 44);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Специальность";
+            this.label10.Text = "Номер\r\nКомнаты";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1186, 847);
+            this.label11.Location = new System.Drawing.Point(1247, 825);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 22);
+            this.label11.Size = new System.Drawing.Size(83, 44);
             this.label11.TabIndex = 40;
-            this.label11.Text = "Специальность";
+            this.label11.Text = "Номер\r\nкомнаты";
             // 
             // textBox10
             // 
-            this.textBox10.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox10.BackColor = System.Drawing.Color.Orange;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox10.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox10.Location = new System.Drawing.Point(1189, 873);
+            this.textBox10.Location = new System.Drawing.Point(1251, 873);
             this.textBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox10.MaxLength = 10;
+            this.textBox10.MaxLength = 3;
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(139, 44);
+            this.textBox10.Size = new System.Drawing.Size(77, 44);
             this.textBox10.TabIndex = 39;
             this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
@@ -332,31 +332,31 @@ namespace RP11
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label12.Location = new System.Drawing.Point(1040, 847);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 22);
+            this.label12.Size = new System.Drawing.Size(62, 22);
             this.label12.TabIndex = 38;
-            this.label12.Text = "Должность";
+            this.label12.Text = "Адрес";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(980, 847);
+            this.label13.Location = new System.Drawing.Point(920, 825);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 22);
+            this.label13.Size = new System.Drawing.Size(87, 44);
             this.label13.TabIndex = 37;
-            this.label13.Text = "Стаж";
+            this.label13.Text = "Номер\r\nпаспорта";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(815, 847);
+            this.label14.Location = new System.Drawing.Point(815, 825);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(62, 22);
+            this.label14.Size = new System.Drawing.Size(87, 44);
             this.label14.TabIndex = 36;
-            this.label14.Text = "Адрес";
+            this.label14.Text = "Серия\r\nпаспорта";
             // 
             // label15
             // 
@@ -415,49 +415,49 @@ namespace RP11
             // 
             // textBox11
             // 
-            this.textBox11.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox11.BackColor = System.Drawing.Color.Orange;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox11.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox11.Location = new System.Drawing.Point(1043, 873);
             this.textBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox11.MaxLength = 10;
+            this.textBox11.MaxLength = 15;
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(139, 44);
+            this.textBox11.Size = new System.Drawing.Size(202, 44);
             this.textBox11.TabIndex = 30;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // textBox12
             // 
-            this.textBox12.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox12.BackColor = System.Drawing.Color.Orange;
             this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox12.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox12.Location = new System.Drawing.Point(984, 873);
+            this.textBox12.Location = new System.Drawing.Point(924, 873);
             this.textBox12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox12.MaxLength = 2;
+            this.textBox12.MaxLength = 6;
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(52, 44);
+            this.textBox12.Size = new System.Drawing.Size(111, 44);
             this.textBox12.TabIndex = 29;
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // textBox13
             // 
-            this.textBox13.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox13.BackColor = System.Drawing.Color.Orange;
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox13.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox13.Location = new System.Drawing.Point(819, 873);
             this.textBox13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox13.MaxLength = 10;
+            this.textBox13.MaxLength = 4;
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(157, 44);
+            this.textBox13.Size = new System.Drawing.Size(97, 44);
             this.textBox13.TabIndex = 28;
             this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // textBox14
             // 
-            this.textBox14.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox14.BackColor = System.Drawing.Color.Orange;
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox14.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox14.Location = new System.Drawing.Point(618, 873);
@@ -471,7 +471,7 @@ namespace RP11
             // 
             // textBox15
             // 
-            this.textBox15.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox15.BackColor = System.Drawing.Color.Orange;
             this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox15.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox15.Location = new System.Drawing.Point(416, 873);
@@ -485,7 +485,7 @@ namespace RP11
             // 
             // textBox16
             // 
-            this.textBox16.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox16.BackColor = System.Drawing.Color.Orange;
             this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox16.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox16.Location = new System.Drawing.Point(208, 873);
@@ -499,7 +499,7 @@ namespace RP11
             // 
             // textBox17
             // 
-            this.textBox17.BackColor = System.Drawing.Color.IndianRed;
+            this.textBox17.BackColor = System.Drawing.Color.Orange;
             this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox17.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox17.Location = new System.Drawing.Point(48, 873);
@@ -513,7 +513,7 @@ namespace RP11
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.BackColor = System.Drawing.Color.Orange;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(45, 942);
@@ -521,7 +521,7 @@ namespace RP11
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(1283, 52);
             this.button2.TabIndex = 23;
-            this.button2.Text = "Редактировать запись";
+            this.button2.Text = "Удалить запись";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -569,7 +569,7 @@ namespace RP11
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.IndianRed;
+            this.button4.BackColor = System.Drawing.Color.Orange;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(1379, 942);
@@ -583,7 +583,7 @@ namespace RP11
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
+            this.button3.BackColor = System.Drawing.Color.Orange;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(1379, 601);
@@ -599,7 +599,7 @@ namespace RP11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1655, 1054);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);

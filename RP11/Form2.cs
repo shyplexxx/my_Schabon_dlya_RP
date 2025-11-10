@@ -28,7 +28,7 @@ namespace RP11
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
+            string connStr = "server=127.0.0.1;user=root;password=root;database=rp12;";
 
             try
             {
@@ -36,16 +36,16 @@ namespace RP11
                 {
                     conn.Open();
                     string query = @"SELECT 
-                                            idteacher AS 'ID',
+                                            idguest AS 'ID',
                                             name AS 'Имя',
                                             second_name AS 'Отчество',
                                             last_name AS 'Фамиия',
                                             number_phone AS 'Номер телефона',
+                                            series_pasport AS 'Серия паспорта',
+                                            number_pasport AS 'Номер паспорта',
                                             adress AS 'Адрес',
-                                            experience AS 'Стаж',
-                                            post AS 'Должность',
-                                            specialization AS 'Специализация'         
-                                   FROM teacher";
+                                            room_number AS 'Номер команты'         
+                                   FROM guest";
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable table = new DataTable();
@@ -68,7 +68,7 @@ namespace RP11
 
         private void LoadData()
         {
-            string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
+            string connStr = "server=127.0.0.1;user=root;password=root;database=rp12;";
 
             try
             {
@@ -76,16 +76,16 @@ namespace RP11
                 {
                     conn.Open();
                     string query = @"SELECT 
-                                            idteacher AS 'ID',
+                                            idguest AS 'ID',
                                             name AS 'Имя',
                                             second_name AS 'Отчество',
                                             last_name AS 'Фамиия',
                                             number_phone AS 'Номер телефона',
+                                            series_pasport AS 'Серия паспорта',
+                                            number_pasport AS 'Номер паспорта',
                                             adress AS 'Адрес',
-                                            experience AS 'Стаж',
-                                            post AS 'Должность',
-                                            specialization AS 'Специализация'         
-                                   FROM teacher";
+                                            room_number AS 'Номер команты'         
+                                   FROM guest";
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable table = new DataTable();
@@ -107,8 +107,8 @@ namespace RP11
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
-            textBox5.Text = "+7";
+            string connStr = "server=127.0.0.1;user=root;password=root;database=rp12;";
+            
 
 
             if (textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" || textBox9.Text == "")
@@ -124,8 +124,8 @@ namespace RP11
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO teacher (name, second_name, last_name, number_phone, adress, experience, post, specialization) " +
-                                   "VALUES (@name, @second, @last, @phone, @adress, @exp, @post, @spec)";
+                    string query = "INSERT INTO guest (name, second_name, last_name, number_phone, series_pasport, number_pasport, adress, room_number) " +
+                                   "VALUES (@name, @second, @last, @phone, @ser, @num, @adress, @room)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
@@ -135,10 +135,10 @@ namespace RP11
                         cmd.Parameters.AddWithValue("@second", textBox3.Text);
                         cmd.Parameters.AddWithValue("@last", textBox4.Text);
                         cmd.Parameters.AddWithValue("@phone", textBox5.Text);
-                        cmd.Parameters.AddWithValue("@adress", textBox6.Text);
-                        cmd.Parameters.AddWithValue("@exp", textBox7.Text);
-                        cmd.Parameters.AddWithValue("@post", textBox8.Text);
-                        cmd.Parameters.AddWithValue("@spec", textBox9.Text);
+                        cmd.Parameters.AddWithValue("@ser", textBox6.Text);
+                        cmd.Parameters.AddWithValue("@num", textBox7.Text);
+                        cmd.Parameters.AddWithValue("@adress", textBox8.Text);
+                        cmd.Parameters.AddWithValue("@room", textBox9.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -155,6 +155,8 @@ namespace RP11
                     textBox6.Text = "";
                     textBox7.Text = "";
                     textBox8.Text = "";
+                    textBox9.Text = "";
+
 
 
 
@@ -168,30 +170,21 @@ namespace RP11
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox14.Text = "+7";
+            
             
 
-            string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
+            string connStr = "server=127.0.0.1;user=root;password=root;database=rp12;";
 
             using (MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr))
             {
                 try
                 {
                     
-                    string query = @"UPDATE teacher SET 
-                                                    idteacher=@id,
-                                                    name=@name,
-                                                    second_name=@second_name,
-                                                    last_name=@last_name,
-                                                    number_phone=@number_phone,
-                                                    adress=@adress,
-                                                    experience=@experience,
-                                                    post=@post,
-                                                    specialization=@specialization
-                                    WHERE number_phone=@number_phone";
+                    string query = @"DELETE FROM guest WHERE idguest = @ID";
+
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", textBox18.Text);
+                    cmd.Parameters.AddWithValue("@ID", textBox18.Text);
                     cmd.Parameters.AddWithValue("@name", textBox17.Text);
                     cmd.Parameters.AddWithValue("@second_name", textBox16.Text);
                     cmd.Parameters.AddWithValue("@last_name", textBox15.Text);
@@ -202,7 +195,7 @@ namespace RP11
                     cmd.Parameters.AddWithValue("@specialization", textBox10.Text);
                     conn.Open();
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Запись успешно обновлена");
+                    MessageBox.Show("Запись успешно Удалена");
 
 
                     LoadData();
@@ -210,7 +203,7 @@ namespace RP11
                     textBox17.Text = "";
                     textBox16.Text = "";
                     textBox15.Text = "";
-                    textBox14.Text = "+7";
+                    textBox14.Text = "";
                     textBox13.Text = "";
                     textBox12.Text = "";
                     textBox11.Text = "";
@@ -293,7 +286,7 @@ namespace RP11
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я1-9]*$");
+            Regex regex = new Regex("^[0-9]*$");
             if (regex.IsMatch(textBox6.Text))
             {
 
@@ -321,7 +314,7 @@ namespace RP11
 
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я]*$");
+            Regex regex = new Regex("^[а-яА-Я0-9 ]*$");
             if (regex.IsMatch(textBox8.Text))
             {
 
@@ -335,7 +328,7 @@ namespace RP11
 
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я]*$");
+            Regex regex = new Regex("^[0-9]*$");
             if (regex.IsMatch(textBox9.Text))
             {
 
@@ -431,7 +424,7 @@ namespace RP11
 
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я1-9]*$");
+            Regex regex = new Regex("^[0-9]*$");
             if (regex.IsMatch(textBox13.Text))
             {
 
@@ -459,7 +452,7 @@ namespace RP11
 
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я]*$");
+            Regex regex = new Regex("^[а-яА-Я0-9 ]*$");
             if (regex.IsMatch(textBox11.Text))
             {
 
@@ -473,7 +466,7 @@ namespace RP11
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
-            Regex regex = new Regex("^[а-яА-Я]*$");
+            Regex regex = new Regex("^[0-9]*$");
             if (regex.IsMatch(textBox10.Text))
             {
 

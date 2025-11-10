@@ -17,7 +17,7 @@ namespace RP11
         {
             InitializeComponent();
             this.ClientSize = new Size(997, 390);
-            string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
+            string connStr = "server=127.0.0.1;user=root;password=root;database=rp12;";
 
             try
             {
@@ -30,11 +30,11 @@ namespace RP11
                                             second_name AS 'Отчество',
                                             last_name AS 'Фамиия',
                                             number_phone AS 'Номер телефона',
+                                            series_pasport AS 'Серия паспорта',
+                                            number_pasport AS 'Номер паспорта',
                                             adress AS 'Адрес',
-                                            experience AS 'Стаж',
-                                            post AS 'Должность',
-                                            specialization AS 'Специализация'         
-                                   FROM teacher";
+                                            room_number AS 'Номер команты'         
+                                   FROM guest";
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable table = new DataTable();

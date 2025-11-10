@@ -40,7 +40,7 @@ namespace RP11
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(12, 319);
@@ -78,7 +78,7 @@ namespace RP11
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.BackColor = System.Drawing.Color.Orange;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(12, 396);
@@ -92,7 +92,7 @@ namespace RP11
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
+            this.button3.BackColor = System.Drawing.Color.Orange;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(12, 610);
@@ -108,7 +108,7 @@ namespace RP11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(474, 682);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
