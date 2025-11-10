@@ -29,35 +29,15 @@ namespace RP11
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "1" && textBox2.Text == "1")
-            {
-                Form2 form2 = new Form2();
+            Form3 form3 = new Form3();
 
-               
-                form2.Show();
-                
-                
-                this.Dispose();
-            }
 
-            else if(textBox1.Text == "2" && textBox2.Text == "2")
-            {
-                Form3 form3 = new Form3();
+            form3.Show();
 
-                
-                form3.Show();
 
-               
-                this.Dispose();
-            }
+            this.Dispose();
 
-            else
-            {
-                MessageBox.Show("Неверный логин или пароль!", "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox1.Text = "";
-                textBox2.Text = "";
 
-            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -66,6 +46,17 @@ namespace RP11
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+
+            form2.Show();
+
+
+            this.Dispose();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

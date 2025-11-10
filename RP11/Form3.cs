@@ -16,6 +16,7 @@ namespace RP11
         public Form3()
         {
             InitializeComponent();
+            this.ClientSize = new Size(997, 390);
             string connStr = "server=127.0.0.1;user=root;password=root;database=rp11;";
 
             try
@@ -24,7 +25,7 @@ namespace RP11
                 {
                     conn.Open();
                     string query = @"SELECT 
-                                            idteacher AS 'ID',
+                                            
                                             name AS 'Имя',
                                             second_name AS 'Отчество',
                                             last_name AS 'Фамиия',
@@ -73,6 +74,18 @@ namespace RP11
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Dispose();
         }
     }
 }
